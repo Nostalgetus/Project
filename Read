@@ -1,4 +1,4 @@
-1.	var                                                                              #include        
+1.	var                                           #include        
 2.	  a: array [1..1000] of string;                                       
 3.	  n, i, j: int64;
 4.	 
