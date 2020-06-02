@@ -1,16 +1,16 @@
-1.	var                                           #include        
-2.	  a: array [1..1000] of string;                                       
-3.	  n, i, j: int64;
-4.	 
-5.	begin
-6.	  readln(n);
-7.	  for i := 1 to n do
-8.	    readln(a[i]);
-9.	  for i := 1 to n do
-10.	    for j := 1 to length(a[i]) do
-11.	      if a[i][j] in ['0'..'9'] then
-12.	        a[i][j] := chr(ord('A') + strtoint(a[i][j]));
-13.	end;
+	var                                                   #include        
+	  a: array [1..1000] of string;                                       
+	  n, i, j: int64;
+	 
+	begin
+	  readln(n);
+	  for i := 1 to n do
+	    readln(a[i]);
+	    for i := 1 to n do
+      for j := 1 to length(a[i]) do
+      if a[i][j] in ['0'..'9'] then
+        a[i][j] := chr(ord('A') + strtoint(a[i][j]));
+end;
 
 
 
